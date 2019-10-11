@@ -7,18 +7,15 @@ The Environment has been provided already by Udacity in its workspace. In case y
 ### Download the Unity Environment
 For this project, you will not need to install Unity - this is because we have already built the environment for you, and you can download it from one of the links below. You need only select the environment that matches your operating system:
 Version 1: One (1) Agent
-
-    Linux: click here
-    Mac OSX: click here
-    Windows (32-bit): click here
-    Windows (64-bit): click here
-
+Linux: click here
+Mac OSX: click here
+Windows (32-bit): click here
+Windows (64-bit): click here
 Version 2: Twenty (20) Agents
-
-    Linux: click here
-    Mac OSX: click here
-    Windows (32-bit): click here
-    Windows (64-bit): click here
+Linux: click here
+Mac OSX: click here
+Windows (32-bit): click here
+Windows (64-bit): click here
 
 Then, place the file in the pDRL-ProjectTwo-Continuous-Control/, and unzip (or decompress) the file.
 
