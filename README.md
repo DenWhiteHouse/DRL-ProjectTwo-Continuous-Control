@@ -1,6 +1,32 @@
 # DRL-ProjectTwo-Continuous-Control
 Udacity Nanodegree on DRL - Project 2
 
+# Getting Started with the code
+The Environment has been provided already by Udacity in its workspace. In case you want to download in follow the instructions below and unzip the environment in the main folder of this repo.
+
+### Download the Unity Environment
+For this project, you will not need to install Unity - this is because we have already built the environment for you, and you can download it from one of the links below. You need only select the environment that matches your operating system:
+Version 1: One (1) Agent
+
+    Linux: click here
+    Mac OSX: click here
+    Windows (32-bit): click here
+    Windows (64-bit): click here
+
+Version 2: Twenty (20) Agents
+
+    Linux: click here
+    Mac OSX: click here
+    Windows (32-bit): click here
+    Windows (64-bit): click here
+
+Then, place the file in the pDRL-ProjectTwo-Continuous-Control/, and unzip (or decompress) the file.
+
+(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+
+(For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this link (version 1) or this link (version 2) to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
+
+
 # Goal of the Project
 
 In this project is asked to train a double-joined arm agent able to tackle a target the Unity's Reacher environment. As instructed a reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
