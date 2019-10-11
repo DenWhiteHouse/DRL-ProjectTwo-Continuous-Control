@@ -189,4 +189,9 @@ class ReplayBuffer:
     def __len__(self):
         """Return the current size of internal memory."""
         return len(self.memory)
-        ```
+ ```
+ 
+# Results
+
+# Future Developments
+As suggested by Udacity, a good future development of this project would be using the Distributed Distributional Deterministic Policy Gradients https://openreview.net/forum?id=SyZipzbCb
