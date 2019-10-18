@@ -194,6 +194,7 @@ class ReplayBuffer:
  ```
  
 # Results
+![Results](results.png)
 
 # Future Developments
 As suggested by Udacity, a good future development of this project would be using the Distributed Distributional Deterministic Policy Gradients https://openreview.net/forum?id=SyZipzbCb
