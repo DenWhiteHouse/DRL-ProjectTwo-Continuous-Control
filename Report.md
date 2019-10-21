@@ -5,6 +5,14 @@ Considering the goal of the project and the environment provided, the Agent will
 The implementation of the algorithm is based on the template provided by Udacity at https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum. A key factor of the implementation is the usage of an Actor-Critic Agent which enhances the estimation of an optimal policy by maximizing separately cumulative state-action values applying a gradient ascent approach (with Gradient Clipping added to avoid the exponential growth of gradients)
 In this project, the actor-critic agent has been implemented in the DDPG_Agent.py file, while the actor-critic models are in the model.py file.
 
+### Why DDPG? 
+The DDPG algorithm has been chosen due to the fact the problem to solve is a continuous action space. To best explore the situation, the algorithm leverages the Actor-Critic paradigm.
+While the actor model learns to predicts the actions, the critic model learns the state-action values to provide. As described below, to best achieve prediction results additional options have been introduced to the algorithm, such as Experience Reply, Ornsteing-Uhlenbeck Noise and so on.
+
+### DDPG Learning
+The learning process of the Actor-Critic models will happen as follow:
+A pool of experiences is taken from the replay buffer and used to update the weights of the critic model which will use them to predicts the actions of the next states provided by the actor model.  The target values are computed using the Bellman equation, after computing the loss the model update itself trying to minimize the loss. While doing that the actor model uses the current states to predict the actions, uses the output of the critic model to compute its Q-values. Both the models' outputs are used to softly update the updates of the models.
+
 As stated in the DDPG paper stated above, to balance continuous space exploitation, the Agent has been provided with a Ornstein-Uhlenbeck process which is responsible for adding noise according to the provided parameters: 
 
 ```python
@@ -14,7 +22,7 @@ EPSILON = 1.0           # explore->exploit noise process added to act step
 EPSILON_DECAY = 1e-6    # decay rate for noise process
 ```
 
-###Learning Steps
+### Learning Steps
 The learning of the Agents have been split according to the parameters below
 
 ```python
